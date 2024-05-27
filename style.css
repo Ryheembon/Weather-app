@@ -79,22 +79,14 @@ h1.temp {
     .search-bar {
         width: calc(100% - 20px);
     }
-
     button {
         width: 100%;
         max-width: 400px;
     }
-
     .card {
         padding: 10px;
     }
 }
-audio {
- width: 20px;
- padding-top: 0;
-}
 .audio-footer {
-    padding-top: 1000;
-    padding-left: 400;
-    margin-right: 500;
+    padding-left:100px;
 }
