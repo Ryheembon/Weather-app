@@ -91,4 +91,10 @@ h1.temp {
 }
 audio {
  width: 20px;
+ padding-top: 0;
+}
+.audio-footer {
+    padding-top: 1000;
+    padding-left: 400;
+    margin-right: 500;
 }
