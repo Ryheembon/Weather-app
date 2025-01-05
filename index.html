@@ -9,14 +9,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <link rel="icon" href="favicon.ico">
-
 </head>
 <body>
   <header class="app-header">
-    <h1>Weather App</h1>
+    <div class="header-content">
+      <h1>Weather App</h1>
+      <!-- Music Player Section -->
+      <footer class="app-footer">
+        <audio controls autoplay>
+          <source src="New Light - .m4a" type="audio/m4a">
+          <source src="New Light - .m4a" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </footer>
+    </div>
   </header>
-  
+
   <main class="app-main">
     <div class="card">
       <img src="landscape.jpeg" class="picture" alt="Landscape" />
@@ -40,13 +48,5 @@
       </div>
     </div>
   </main>
-
-  <footer class="app-footer">
-    <audio controls autoplay>
-      <source src="New Light - .m4a" type="audio/m4a">
-      <source src="New Light - .m4a" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-  </footer>
 </body>
 </html>
