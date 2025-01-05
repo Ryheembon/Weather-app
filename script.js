@@ -79,3 +79,8 @@ document
   });
 
 weather.fetchWeather("Denver");
+if (window.innerWidth < 600) {
+  // Disable background animation on small devices
+  clearInterval(this.animateBackground);
+}
+
