@@ -4,48 +4,59 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     background: linear-gradient(45deg, #ff6f61, #ffb8b8, #ff8a65, #ff6f61);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
-  }
-  
-  /* Create a keyframe animation for the moving gradient */
-  @keyframes gradientBG {
+}
+
+/* Create a keyframe animation for the moving gradient */
+@keyframes gradientBG {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
-  
-  /* Style for the card container */
-  .card {
+}
+
+/* Style for the header content */
+.header-content {
+    display: flex;
+    flex-direction: column; /* Stack h1 and music player vertically */
+    justify-content: center;
+    align-items: flex-start; /* Align to the left */
+    padding: 1em;
+}
+
+/* Style for the card container */
+.card {
     background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 2em;
     border-radius: 30px;
     max-width: 420px;
-    margin: 1em;
-    position: relative;
-    z-index: 1;
     text-align: center;
-  }
-  
-  /* Other styling for the app */
-  input.search-bar {
+    box-sizing: border-box;
+    margin-left: 2em; /* Add space between header and weather card */
+}
+
+/* Styling for the search bar and button */
+input.search-bar {
     padding: 0.5em;
     margin-bottom: 1em;
     border-radius: 24px;
     background: rgba(255, 255, 255, 0.3);
     color: white;
-  }
-  
-  button {
+    width: 100%;
+}
+
+button {
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
     padding: 10px 20px;
@@ -53,25 +64,36 @@ body {
     color: white;
     cursor: pointer;
     transition: background 0.3s;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: rgba(255, 255, 255, 0.5);
-  }
-  
-  h1.temp, .city, .description, .humidity, .wind {
+}
+
+h1.temp, .city, .description, .humidity, .wind {
     margin: 0.5em 0;
-  }
-  
-  .weather.loading {
+}
+
+.weather.loading {
     visibility: hidden;
-  }
-  
-  .weather.loading::after {
+}
+
+.weather.loading::after {
     content: "loading...";
     color: white;
     position: absolute;
     top: 20px;
     left: 20px;
-  }
-  
+}
+
+/* Styling for the footer with music player */
+.app-footer {
+    margin-top: 20px; /* Add space under the Weather App title */
+    width: 100%;
+    text-align: left; /* Align music player to the left */
+}
+
+audio {
+    width: 100%;
+    max-width: 420px; /* Restrict max width */
+}
