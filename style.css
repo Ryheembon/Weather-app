@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
@@ -13,7 +13,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Gradient Animation */
+
 @keyframes gradientBG {
     0% {
         background-position: 0% 50%;
@@ -26,7 +26,7 @@ body {
     }
 }
 
-/* Header Content */
+
 .header-content {
     display: flex;
     flex-direction: column;
@@ -35,14 +35,14 @@ body {
     padding: 1em;
     width: 100%;
 }
-/* weather test */
+
 .weather-today{
     color: #ce7a7a;
     box-shadow: 5px 5px 5px rgba(223, 71, 21, 0.2); /* Subtle shadow */
 
 }
 
-/* Weather Card */
+
 .card {
     background: rgba(0, 0, 0, 0.7);
     color: white;
@@ -55,7 +55,7 @@ body {
     width: 100%;
 }
 
-/* Search Bar */
+
 input.search-bar {
     padding: 0.5em;
     margin-bottom: 1em;
@@ -71,7 +71,7 @@ input::placeholder {
     color: white;
 }
 
-/* Buttons */
+
 button {
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
@@ -84,12 +84,12 @@ button {
     max-width: 200px;
     font-size: 1rem;
 }
-/* hoverng over button ^ */
+
 button:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Weather Information */
+
 h1.temp, .city, .description, .humidity, .wind {
     margin: 0.5em 0;
     font-size: 1rem;
@@ -108,7 +108,7 @@ h1.temp, .city, .description, .humidity, .wind {
     left: 20px;
 }
 
-/* Footer with Music Player */
+
 .app-footer {
     margin-top: 20px;
     width: 95%;
@@ -121,10 +121,10 @@ audio {
     max-width: 420px;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 600px) {
     body {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: column;
         justify-content: flex-start; /* Align to the top */
         align-items: center;
         padding: 1em;
