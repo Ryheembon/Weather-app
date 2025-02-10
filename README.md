@@ -156,7 +156,7 @@ The HTML file establishes the structure of the application. Key elements include
 ## Acknowledgments
 - [OpenWeather API](https://openweathermap.org/)
 - [Unsplash API](https://unsplash.com/developers)
-- Background music: "New Light"
+- Background music: "New Light BY Ryheem Bonaparte AKA - ME"
 
 ---
 
